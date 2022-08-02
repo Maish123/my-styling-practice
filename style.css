@@ -1,0 +1,52 @@
+/* *{
+margin: 0;
+padding: 0;
+} */
+
+
+
+
+/* preferred body styling 16px is the default font size of the texts in the html*/
+body {
+    background-color: #f4f4f4;
+    color: #555555;
+    /* font-family: Comic Sans MS;
+    font-size: 16px;
+    font-weight:normal;
+    we deal with fonts in one line */
+    font: normal 16px Comic Sans MS;
+    line-height: 1.6em;
+    /* sorts the separation of one text line and the next em is preferred for responsiveness */
+    margin: 0;
+}
+
+.container {
+    /* this helps us push content inside */
+    /* when we use px it wont be responsive as screen becomes smaller, instead use a percentage */
+    width: 95%;
+    /* margin is spacing around an element */
+    /* padding is the space between the content and the border while margin is the space outside the border */
+    margin: auto;
+}
+
+.box-1 {
+    background-color: #333;
+    color: whitesmoke;
+    border: 5px red solid;
+    /* would be the same as saying border right left bottom and top and giving the instructions */
+    border-width: 2px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box-1 h1{
+    text-decoration: underline;
+    letter-spacing: 0.2em;
+    font-style: oblique;
+}
+
+.box-2 {
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
