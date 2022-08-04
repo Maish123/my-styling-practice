@@ -3,6 +3,33 @@ margin: 0;
 padding: 0;
 } */
 
+a{
+    /* most a(link tags) are styled globally to remove their default styles */
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    /* a tags come with their own hover effect when pointed at, we can set thei color to be different when hovered */
+    color: red;
+}
+ a:active{
+    color: green;
+ }
+
+ .button{
+    background-color:#333 ;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 15px;
+ }
+
+ .button:hover{
+    background-color: green;
+ }
+
+ .clr{
+    clear: both;
+ }
 
 
 
@@ -50,3 +77,73 @@ body {
     padding: 20px;
     margin: 20px 0;
 }
+
+.categories {
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul{
+    /* ul come with their own padding so to disabe it we set it to 0 */
+    padding: 0;
+    list-style: none;
+}
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    /* you can set it to a background image, as */
+    /* list-style-image: url(link to image); */
+}
+
+.my-form{
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 20px 0;
+    background-color: rgb(176, 173, 173);
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 90%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+   float: left; 
+   width: 70%;
+   box-sizing: border-box;
+}
+
+#side-bar{
+    float: right; 
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+ }
+
+
