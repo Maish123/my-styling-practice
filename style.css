@@ -133,17 +133,61 @@ body {
 
 #main-block{
    float: left; 
-   width: 70%;
+   width: 60%;
    box-sizing: border-box;
+   margin: 20px 0;
+   border: 1px solid red;
+   padding: 15px;
+   border-radius: 20px;
 }
 
 #side-bar{
     float: right; 
-    width: 30%;
+    width: 38%;
     background-color: #333;
     color: #fff;
     padding: 15px;
     box-sizing: border-box;
+    margin: 20px 0;
+ }
+ .p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url(practice\ image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
  }
 
+ .p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+ }
 
+ .p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+ }
+
+ .fix-me{
+    /* //popular for navbars so that their position is always fixed no matter where you at in the page */
+    position: fixed;
+    top: 400px;
+ }
+
+ .my-list li:first-child{
+    background: red;
+ }
+
+.my-list li:last-child{
+    background: greenyellow;
+}
+
+
+.my-list li:nth-child(even){
+    background: grey;
+}
